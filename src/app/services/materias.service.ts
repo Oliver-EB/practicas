@@ -18,6 +18,18 @@ export class MateriasService {
       materias:'Fundamentos de ti, matematicas , español',
       fecha : "23/12/12",
       imagen: ""
+    },
+    {
+      cuatrimestre : 4,
+      materias:'Fundamentos de ti, matematicas , español, Historia',
+      fecha : "23/12/12",
+      imagen: ""
+    },
+    {
+      cuatrimestre : 5,
+      materias:'Fundamentos de ti, matematicas , español , geografia',
+      fecha : "23/12/12",
+      imagen: ""
     }
     
   ]
