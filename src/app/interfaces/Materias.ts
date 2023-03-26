@@ -4,3 +4,6 @@ export interface Materia {
     fecha: string;
     imagen:string;
 }
+export interface Estado{
+    
+}

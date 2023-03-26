@@ -1,0 +1,58 @@
+<br>
+<div *ngIf="enviado">
+  <p>Mensaje enviado con éxito.</p>
+</div>
+
+<form (ngSubmit)="onSubmit(formulario)" #formulario="ngForm" novalidate>
+    <div>
+        <label for="nombre">Nombre: </label><br>
+        <input type="text" id="nombre" name="nombre" class="inp" [(ngModel)]="nombre" required minlength="3" maxlength="50">
+        <div *ngIf="formulario.submitted && formulario.controls['nombre'].errors'required'">El nombre es obligatorio</div>
+        <div *ngIf="formulario.submitted && formulario.controls['nombre'].errors'minlength'">El nombre debe tener al menos 3 caracteres</div>
+        <div *ngIf="formulario.submitted && formulario.controls['nombre'].errors'maxlength'">El nombre no debe tener más de 50 caracteres</div>
+      </div>
+      <br>
+      <div>
+        <label for="nombre">pregunta 2  : </label><br>
+        <input type="text" id="dos" name="dos" class="inp" [(ngModel)]="dos" required minlength="3" maxlength="50">
+        <div *ngIf="formulario.submitted && formulario.controls['dos'].errors'required'">El nombre es obligatorio</div>
+        <div *ngIf="formulario.submitted && formulario.controls['dos'].errors'minlength'">El nombre debe tener al menos 3 caracteres</div>
+        <div *ngIf="formulario.submitted && formulario.controls['dos'].errors'maxlength'">El nombre no debe tener más de 50 caracteres</div>
+      </div>
+      <br>
+      <div>
+        <label for="nombre">pregunta 3  </label> <br>
+        <input type="text" id="tres" name="tres" class="inp" [(ngModel)]="tres" required minlength="tres" maxlength="50">
+        <div *ngIf="formulario.submitted && formulario.controls['tres'].errors'required'">El nombre es obligatorio</div>
+        <div *ngIf="formulario.submitted && formulario.controls['tres'].errors'minlength'">El nombre debe tener al menos 3 caracteres</div>
+        <div *ngIf="formulario.submitted && formulario.controls['tres'].errors'maxlength'">El nombre no debe tener más de 50 caracteres</div>
+      </div>
+      <br>
+
+      <div>
+        <label for="nombre">pregunta 4  </label><br>
+        <input type="text" id="cuatro" name="cuatro" class="inp" [(ngModel)]="cuatro" required minlength="3" maxlength="50">
+        <div *ngIf="formulario.submitted && formulario.controls['cuatro'].errors'required'">El nombre es obligatorio</div>
+        <div *ngIf="formulario.submitted && formulario.controls['cuatro'].errors'minlength'">El nombre debe tener al menos 3 caracteres</div>
+        <div *ngIf="formulario.submitted && formulario.controls['cuatro'].errors'maxlength'">El nombre no debe tener más de 50 caracteres</div>
+      </div>
+      <br>
+      <div>
+        <label for="nombre">pregunta 5</label><br>
+        <input type="text" id="cinco" name="cinco" class="inp" [(ngModel)]="cinco" required minlength="3" maxlength="50">
+        <div *ngIf="formulario.submitted && formulario.controls['cinco'].errors'required'">El nombre es obligatorio</div>
+        <div *ngIf="formulario.submitted && formulario.controls['cinco'].errors'minlength'">El nombre debe tener al menos 3 caracteres</div>
+        <div *ngIf="formulario.submitted && formulario.controls['cinco'].errors'maxlength'">El nombre no debe tener más de 50 caracteres</div>
+      </div>
+      <br>
+      <div>
+        <label for="correo">Correo electrónico:</label> <br>
+        <input type="email" id="correo" name="correo" class="inp" [(ngModel)]="correo" required email>
+        <div *ngIf="formulario.submitted && formulario.controls['correo'].errors'required'">El correo electrónico es obligatorio</div>
+        <div *ngIf="formulario.submitted && formulario.controls['correo'].errors'email'">El correo electrónico no es válido</div>
+      </div>
+      <button type="submit">Enviar</button>
+      <div *ngIf="enviado">¡Formulario enviado!</div>
+
+  <button type="submit">Enviar</button>
+</form>

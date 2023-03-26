@@ -6,16 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./directivas.component.css']
 })
 export class DirectivasComponent implements OnInit{
-mostrarMensaje = false;
-contador = 1;
-materias: string []= [
-  'materia ',
-  'materia 1',
-  'materia 2',
-  'materia 3',
-];
-constructor(){}
-ngOnInit(): void {
-  
-}
+  mostrarMensaje = false;
+  contador = 1;
+  materias: string []= [
+    'materia ',
+    'materia 1',
+    'materia 2',
+    'materia 3',
+  ];
+  constructor(){}
+  ngOnInit(): void {
+    
+  }
 }
